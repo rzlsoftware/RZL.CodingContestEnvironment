@@ -29,6 +29,4 @@ jobs:
         dotnet-version: ${{ env.DOTNET_VERSION }}
 
     - name: 'dotnet build'
-      run: |
-        dotnet build ContestProject/ -c Release
-        dotnet build ContestProjectTests/ -c Release
+      run: dotnet build ContestSolution.sln
